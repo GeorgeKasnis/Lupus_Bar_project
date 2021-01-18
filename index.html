@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link href="http://fonts.cdnfonts.com/css/sulphur-point" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/index.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar sticky-top" id="mynav">
+      <div class="container-fluid" id="navbarSupportedContent">
+        <ul class="navbar-nav  flex-row" id="firstul">
+          <li class="nav-item active "><a href="#drinks">Home</a></li>
+          <li class="nav-item active " ><a href="#story">Our Story</a></li>
+        </ul>
+        <a href="#drinks" class="navbar-brand" id="navbarid">
+          <img src="assets/images/Lupus Logo5.svg" alt=""  />
+        </a>
+        <ul class="navbar-nav  flex-row" id="secul">
+          <li class="nav-item active"><a href="#mycarousel">Photo Gallery</a></li>
+          <li class="nav-item active"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div data-spy="scroll" data-target="#mynav" data-offset="1">
+      <div class="row" id="drinks">
+        <div class="col-lg-6" id="photo-col">
+          <img
+            class="img-fluid"
+            id="frstimg"
+            src="https://images.unsplash.com/photo-1525268323446-0505b6fe7778?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80"
+            alt=""
+          />
+          <button class="btn" id="btndrinks" onclick="getDrinks()">Drinks</button>
+        </div>
+        <div class="col-lg-6" id="text-col">
+          <h1 class="h1 text-center" id="firsth1">100 Drink Flavors</h1>
+          <h4 class="mt-4 text-center mb-4 d-flex flex-column">
+            <span>What type of Person are you ?</span> <span>Spicy,Sweet or Bitter ?</span>
+          </h4>
+          <h4 class="pt-4 text-center">
+            When we drink, we get drunk. When we get drunk, we fall asleep. When we fall asleep, we commit no sin. When we
+            commit no sin, we go to heaven. So, let’s all get drunk and go to heaven!
+          </h4>
+        </div>
+      </div>
+
+  
+      <div class="container" id="story">
+        <h1 class="text-center mt-4 p-4" id="firsth1">How We Started</h1>
+        <div class="quote">
+          <blockquote class="blockquote mt-4 text-center px-4">
+            One cold winter day i decided with 2 friends that we want to make the world happier. And how would we achieve
+            that? We decided to open the Lupus Bar, making the best drinks that one could taste. The wonderful
+            combinations we have studied can make you smile from the first try. Why not keep smiling? We are waiting for
+            you in our wonderful bar !!
+          </blockquote>
+        </div>
+      </div>
+  
+      <div class="row mt-5" id="mycarousel">
+        <div class="col-lg-6 mt-5 d-flex flex-column">
+          <h1 class="text-center align-self-center px-5" id="firsth1">Are you curious to see our place?</h1>
+          <h4 class="text-center align-self-center mt-5 px-5" id="lasth1">
+            You can get a taste of what awaits you if you visit us. But do not forget the other 100 are here !!
+          </h4>
+        </div>
+        <div class="col-lg-6" id="carousel">
+          <!--  -->
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="4000">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://images.unsplash.com/photo-1575444758702-4a6b9222336e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src=" https://images.unsplash.com/photo-1572116469696-31de0f17cc34?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://images.unsplash.com/photo-1516997121675-4c2d1684aa3e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80"
+                  class="d-block w-100"
+                  alt=""
+                />
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+  
+  
+      <div class="container mt-5" id="contact">
+        <h3 class="text-center mt-4" id="firsth1">You Will Find Us </h3>
+        <h5 class="text-center">-Lorem 7,Ipsum-</h5>
+        <h5 class="text-center"><span><i class="fas fa-phone"></i></span>210-0000000</h5>
+        <div class="div text-center mb-4">
+          <span class="align-self-center"><a href=""><i class="fab fa-facebook"></a></i></span>
+          <span class="align-self-center"><a href=""><i class="fab fa-instagram"></a></i></span>
+          <span class="align-self-center"><a href=""><i class="fab fa-tiktok"></i></a></span>
+        </div>
+        
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="assets/js/index.js"></script>
+</html>
